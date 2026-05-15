@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; @apply bg-gray-50 text-gray-900; }
+  h1,h2,h3,h4 { font-family: 'Outfit', sans-serif; }
+}
+
+@layer components {
+  .sidebar-link { @apply flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-primary-50 hover:text-primary-700 transition-all duration-150 cursor-pointer w-full text-left; }
+  .sidebar-link.active { @apply bg-primary-50 text-primary-700; }
+  .stat-card { @apply bg-white rounded-xl border border-gray-100 p-5 shadow-sm hover:shadow-md transition-shadow; }
+  .btn-primary { @apply bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors disabled:opacity-50 flex items-center gap-2; }
+  .btn-secondary { @apply bg-white text-gray-700 border border-gray-200 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors; }
+  .btn-danger { @apply bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-red-600 transition-colors; }
+  .input { @apply w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white; }
+  .table-th { @apply text-left text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-3 bg-gray-50; }
+  .table-td { @apply px-4 py-3 text-sm text-gray-700 border-b border-gray-50; }
+  .badge { @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium; }
+  .badge-green  { @apply bg-green-100 text-green-700; }
+  .badge-red    { @apply bg-red-100 text-red-700; }
+  .badge-yellow { @apply bg-yellow-100 text-yellow-700; }
+  .badge-blue   { @apply bg-blue-100 text-blue-700; }
+  .badge-purple { @apply bg-purple-100 text-purple-700; }
+  .badge-gray   { @apply bg-gray-100 text-gray-600; }
+  .card { @apply bg-white rounded-xl border border-gray-100 shadow-sm; }
+  .page-title { @apply text-2xl font-bold text-gray-900; font-family: 'Outfit', sans-serif; }
+  .page-sub { @apply text-sm text-gray-500 mt-1 mb-6; }
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 99px; }
