@@ -36,7 +36,7 @@ jobs:
           context: ./school-cms
           file: ./school-cms/Dockerfile
           push: true 
-          tags: gsanjay06/test:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/test:latest
           
         
 
