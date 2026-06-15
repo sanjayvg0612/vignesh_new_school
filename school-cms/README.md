@@ -10,7 +10,7 @@ A complete **Next.js 14 + Tailwind CSS** school admin dashboard with **mock data
 # 1. Install dependencies
 npm install
 
-# 2. Run the dev server  
+# 2. Run the dev server  i.e local machine
 npm run dev
 ```
 
