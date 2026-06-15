@@ -33,7 +33,7 @@ jobs:
       - name: build and push to docker hub
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./school-cms
           file: ./school-cms/Dockerfile
           push: true 
           tags: gsanjay06/test:latest
