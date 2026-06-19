@@ -37,7 +37,8 @@ jobs:
           file: ./school-cms/Dockerfile
           push: true 
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/test:V1.0.0.0
-          
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
         
 
     
